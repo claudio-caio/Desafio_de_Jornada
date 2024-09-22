@@ -1,0 +1,233 @@
+.contacto {
+    max-width: 1489px;
+    margin: 0 auto;
+}
+
+.contacto__wrapper {
+    margin-bottom: 60px;
+}
+
+.contacto__img--wrapper {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)),
+        url('img/take-a-virtual-tour.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 37vh;
+    align-items: center;
+}
+
+
+.texto__contacto {
+    text-align: left;
+    padding-top: 126px;
+    padding-bottom: 130px;
+    padding-right: 715px;
+    padding-left: 213px;
+}
+
+.texto__contacto h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+}
+
+.texto__contacto p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+}
+
+.texto__contacto--subraya {
+    color: red;
+    width: 185px;
+    height: 4px;
+    background: var(--rojo);
+    margin-bottom: 20px;
+}
+
+
+
+.texto__informacion--texto {
+    max-width: 1200px;
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 200%;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.formulario{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.formulario__nombre,
+.formulario__tema {
+    margin-bottom: 1rem;
+}
+
+.formulario__boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.formulario__nombre--texto,
+.formulario__telefono--numero,
+.formulario__correo--texto,
+.formulario__tema--texto {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.formulario__telefono--input,
+.formulario__correo--input {
+    width: 380px; 
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #666;
+    background-color: transparent;
+    color: #333;
+    height: 30px;
+}
+
+.formulario__nombre--input,
+.formulario__tema--input {
+    width: 100%; 
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #666;
+    background-color: transparent;
+    color: #333;
+    height: 30px;
+}
+
+.formulario__tema--input:focus, .formulario__nombre--input:focus, .formulario__correo--input:focus, .formulario__telefono--input:focus {
+    border-bottom: 3px solid var(--rojo);
+}
+
+
+
+.formulario__correo,
+.formulario__telefono {
+    width: 384px;
+}
+
+.formulario__contactos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.formulario__boton--texto {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    min-width: 45px;
+    width: 768px;
+    height: 100px;
+    
+}
+
+
+@media screen and (max-width:769px) {
+
+    .contacto__img--wrapper {
+        background-image: linear-gradient(
+            rgba(0,0,0,0.4),
+            rgba(0,0,0,0.4)),
+            url('img/Diseno-de-Interiores-Crea-espacios-que-se-adapten-a-tus-necesidades-768x512.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 37vh;
+        align-items: center;
+    }
+
+    .texto__contacto {
+        text-align: left;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        padding-right: 207px;
+        padding-left: 68px;
+    }
+
+    .formulario {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .formulario__contactos {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .formulario__telefono--input, .formulario__correo--input {
+        width: 569px;
+    }
+    textarea {
+        resize: vertical;
+        min-width: 36px;
+        width: 568px;
+    }
+}
+
+
+
+@media screen and (max-width:361px) {
+
+    .contacto__img--wrapper {
+        background-image: linear-gradient(
+            rgba(0,0,0,0.4),
+            rgba(0,0,0,0.4)),
+            url('img/take-a-virtual-tour.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 37vh;
+        align-items: center;
+    }
+
+    .texto__contacto {
+        text-align: left;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-right: 30px;
+        padding-left: 39px;
+    }
+
+    .formulario {
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .formulario__telefono--input, .formulario__correo--input {
+        width: 330px;
+    }
+    textarea {
+        resize: vertical;
+        min-width: 26px;
+        width: 330px;
+    }
+}

@@ -1,0 +1,287 @@
+.blog {
+    max-width: 1489px;
+    margin: 0 auto;
+}
+.blog__img--wrapper {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)),
+        url('img/image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 37vh;
+    align-items: center;    
+}
+.texto__fondo {
+    text-align: left;
+    padding-top: 126px;
+    padding-bottom: 130px;
+    padding-right: 763px;
+    padding-left: 133px;
+}
+    
+.texto__fondo h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+}
+
+.texto__fondo p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+}
+
+.texto__fondo--subraya{
+    color: red;
+    width: 150px;
+    height: 4px;
+    background: var(--rojo);
+    margin-bottom: 20px;
+}
+
+
+.tokyo {
+    margin-bottom: 60px;
+    margin-top: 60px
+}
+
+.tokyo__llegadad,
+.tokyo__imagen--tienda {
+    display: flex;
+    gap: 24px;
+}
+
+
+.tokyo__llegadad--destaque {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+
+.tokyo__llegadad--detalles {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 581px;
+    max-width: 100%;
+}
+
+.tokyo__imagen--una-container {
+    flex: 1;
+}
+
+
+.acomodaciones {
+    
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.acomodaciones__titulo--texto,
+.descripciones__exploracion--texto,
+.descripciones__compros--texto,
+.descripciones__gastronomia--texto,
+.descripciones__concluye--texto {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.acomodaciones__texto--parrafo,
+.descripciones__exploracion--detalles,
+.descripciones__compros--detalles,
+.descripciones__gastronomia--detalles,
+.descripciones__concluye--detalles {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 1200px;
+    max-width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.imagen__nocturna--iluminada-container {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)),
+        url('img/tokyo@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 37vh;
+    align-items: center; 
+}
+
+.descripciones {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.recomendaciones__lista {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.recomendaciones__elementos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.recomendaciones__elementos--image {
+    max-width: 100%;
+}
+
+.recomendaciones__elementos--nombre {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 24px 0;
+}
+
+.recomendaciones__elementos--descripcion {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+
+@media screen and (max-width: 769px) {
+
+    .texto__fondo h1 {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        align-items: center;
+    }
+
+    .texto__fondo p {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;
+        color: white;
+        
+    }
+    .texto__fondo {
+        text-align: left;
+        padding-top: 142px;
+        padding-bottom: 170px;
+        padding-right: 210px;
+        padding-left: 89px;
+    }
+
+    .texto__fondo--subraya {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        width: 185px;
+    }
+    .tokyo__llegadad--detalles {
+        font-size: 24px;
+        padding-right: 79px;
+        margin-right: -130px;
+    }
+
+    .tokyo__llegadad, .tokyo__imagen--tienda {
+        display: flex;
+        gap: 0;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .imagen__tienda--tokyo {
+        height: 360px;
+        width: 312;
+    }
+
+    .acomodaciones {
+        margin: 20px;
+    }
+
+    .imagen__nocturna--iluminada-container {
+        min-height: 120vh;
+    }
+
+    .recomendaciones__lista {
+        display: flex;
+        flex-direction: column;
+        margin: 20px
+    }
+
+    .descripciones { 
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+
+    .tokyo__llegadad--detalles {
+        font-size: 24px;
+        padding-right: 79px;
+        margin-right: -130px;
+        font-size: 19px;
+    }
+
+
+
+    .blog {
+        width: 100%;
+    }
+    .texto__fondo {
+        text-align: left;
+        padding-top: 146px;
+        padding-bottom: 159px;
+        padding-right: 7px;
+        padding-left: 30px;
+    }
+
+    .texto__fondo h1 {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        align-items: center;
+    }
+
+    .texto__fondo p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        color: white;
+        
+    }
+    
+
+    .recomendaciones__elementos--boton {
+        border-radius: 8px;
+        background: var(--rojo, #B81515);
+        padding: 16px 48px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
